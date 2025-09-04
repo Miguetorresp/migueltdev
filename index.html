@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miguelt.dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script> -->
+     <!-- <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script> -->
+     
+
+
+</head>
+
+<body>
+    <div id="particles-container"></div>
+    <!-- LOADER -->
+    <div class="loader-container" id="loader">
+        <div class="floating-particles" id="floatingParticles"></div>
+
+        <div class="loader-logo" id="loaderLogo">
+            <span class="code-brackets">&lt;/&gt;</span> miguelt.dev
+        </div>
+
+        <div class="loader-text" id="loaderText">
+            <span class="code-brackets">//</span> Inicializando experiencia digital...
+        </div>
+
+        <div class="loader-progress-container">
+            <div class="loader-progress" id="loaderProgress"></div>
+        </div>
+
+        <div class="loader-percentage" id="loaderPercentage">0%</div>
+    </div>
+
+    <!-- TRANSICIÓN ÉPICA -->
+    <div class="loader-transition" id="loaderTransition">
+        <div class="slide-panel"></div>
+        <div class="slide-panel"></div>
+        <div class="slide-panel"></div>
+        <div class="slide-panel"></div>
+        <div class="slide-panel"></div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+            <div class="container">
+                <a class="navbar-brand icono-principal" href="#"><span class="color-amarillo">&lt;/&gt;</span>
+                    miguelt.dev</a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="bi bi-menu-button-wide color-amarillo"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home"><i
+                                    class="bi bi-house-door color-amarillo"></i> Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services"><i
+                                    class="bi bi-person color-amarillo"></i> Acerca de mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about"><i
+                                    class="bi bi-briefcase color-amarillo"></i> Servicios </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience"><i
+                                    class="bi bi-hand-thumbs-up color-amarillo"></i> ¿Por qué elegirme?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio"><i
+                                    class="bi bi-folder color-amarillo"></i> Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact"><i
+                                    class="bi bi-envelope color-amarillo"></i> Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="footer-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero-section position-relative">
+            <div class="container-sm p-0" id="top">
+                <div class="d-flex justify-content-center align-items-center min-vh-100 gap-4 flex-wrap">
+                    <!-- Text Content -->
+                    <div class="text-column d-flex flex-column justify-content-center">
+                        <div class="text-start miguel-text">
+                            <h1 class="main-title">
+                                <span class="title-line">
+                                    <span class="james-front bebas-neue-regular">MIGUEL</span>
+                                </span>
+                                <span class="title-line">
+                                    <span class="richards-front bebas-neue-regular">TORRES</span>
+                                </span>
+                                <span class="title-line bebas-neue-regular">Developer</span>
+                            </h1>
+
+                            <p class="subtitle">Hola 👋, soy un apasionado del software</p>
+                            <p class="subtitle">y hago que el código baile al ritmo de tus ideas</p>
+
+                            <div class="status-section d-flex align-items-center">
+                                <div class="status-dot"></div>
+                                <span class="status-text">Freelancer Disponible</span>
+                            </div>
+
+                            <!-- <div class="social-icons">
+                                <a href="#" class="social-icon" title="Tik Tok"><i class="bi bi-tiktok"></i></a>
+                                <a href="#" class="social-icon" title="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="#" class="social-icon" title="Facebook"><i class="bi bi-envelope"></i></a>
+                                <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div> -->
+                            <div class="social-links">
+                                <a href="#" class="social-icon social-btn" data-social="tiktok" title="Tik Tok"><i class="bi bi-tiktok"></i></a>
+                                <a href="#" class="social-icon social-btn" data-social="github" title="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="#" class="social-icon social-btn" data-social="email" title="Gmail"><i class="bi bi-envelope"></i></a>
+                                <a href="#" class="social-icon social-btn" data-social="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-column d-flex justify-content-center align-items-center position-relative">
+                        <div class="image-section position-relative">
+                            <div class="shapes-container">
+                                <div class="geometric-shape shape-1"></div>
+                                <div class="geometric-shape shape-2"></div>
+                                <div class="geometric-shape shape-3"></div>
+                            </div>
+                            <img src="./images/persona.png" alt="Foto persona" class="person-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About me -->
+        <section id="about" class="about-section position-relative mb-5">
+            <div class="services-bg-text-2 bebas-neue-regular ">Acerca</div>
+            <div class="container-sm">
+                <p class="subtitulos" data-aos="flip-up" data-aos-duration="400">Acerca de mí</p>
+                <!-- Separador-->
+                <div class="section-separator" data-aos="zoom-out-right" >
+                    <span class="separator-start">&lt;/</span>
+                    <span class="separator-end">&gt;</span>
+                </div>
+                <div class="row align-items-center flex-wrap">
+                    <!-- Imagen -->
+                    <div class="col-md-5 d-flex justify-content-center mb-4 mb-md-0" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
+                        <div class="about-img-wrapper">
+                            <img src="./images/persona.png" alt="Sobre mí" class="about-img">
+                        </div>
+                    </div>
+                    <!-- Texto -->
+                    <div class="col-md-7">
+                        <p class="about-intro mb-2 " data-aos="fade-up" data-aos-anchor-placement="top-center">
+                            ¡Hola! Soy un apasionado del desarrollo web, con más de 9 años de experiencia, basado en
+                            Lima
+                            <span class="about-location"><i class="fa-solid fa-location-dot"></i> Ecuador</span>
+                        </p>
+                        <p class="subtitle mb-3" data-aos="zoom-in-left" data-aos-offset="400">Mis habilidades son diversas y me permiten abordar proyectos desde diferentes perspectivas, asegurando un enfoque integral y efectivo. Mis fortalezas incluyen:</p>
+                        <ul class="about-list mb-3">
+                            <li data-aos="fade-left" data-aos-offset="400" data-aos-duration="400"><i class="fa-solid fa-circle-check"></i> Diseño gráfico</li>
+                            <li data-aos="fade-left" data-aos-offset="400" data-aos-duration="450"><i class="fa-solid fa-circle-check"></i> Desarrollo web</li>
+                            <li data-aos="fade-left" data-aos-offset="400" data-aos-duration="500"><i class="fa-solid fa-circle-check"></i> UI/UX</li>
+                            <li data-aos="fade-left" data-aos-offset="400" data-aos-duration="550"><i class="fa-solid fa-circle-check"></i> Investigación de mercado</li>
+                        </ul>
+                        <p class="about-special mb-0" data-aos="zoom-in-left" data-aos-offset="400">
+                            Especializado en crear productos digitales para plataformas móviles y de escritorio, mi
+                            objetivo es entregar soluciones innovadoras que sean funcionales y atractivas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About me -->
+
+        <!-- Cinta animada tipo diseño -->
+        <div class="div-cinta" data-aos="zoom-in-up" data-aos-offset="400" data-aos-duration="400">
+            <div class="diagonal-banner orange-banner">
+                <div class="banner-track">
+                    <div class="banner-text">
+                        <span class="text-item">Logo Design</span>
+                        <span class="text-item">Website Design</span>
+                        <span class="text-item">Brand Design</span>
+                        <span class="text-item">User Experience</span>
+                        <span class="text-item">Senior Designer</span>
+                        <span class="text-item">Creative Design</span>
+                        <span class="text-item">Portfolio</span>
+                        <span class="text-item">Digital Agency</span>
+                    </div>
+                    <!-- Duplicado -->
+                    <div class="banner-text">
+                        <span class="text-item">Logo Design</span>
+                        <span class="text-item">Website Design</span>
+                        <span class="text-item">Brand Design</span>
+                        <span class="text-item">User Experience</span>
+                        <span class="text-item">Senior Designer</span>
+                        <span class="text-item">Creative Design</span>
+                        <span class="text-item">Portfolio</span>
+                        <span class="text-item">Digital Agency</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="diagonal-banner black-banner">
+                <div class="banner-track reverse">
+                    <div class="banner-text">
+                        <span class="text-item">Senior Designer</span>
+                        <span class="text-item">Over 100 Customers</span>
+                        <span class="text-item">Brand Experience</span>
+                        <span class="text-item">Web Development</span>
+                        <span class="text-item">Graphic Design</span>
+                        <span class="text-item">UI/UX Design</span>
+                        <span class="text-item">Creative Studio</span>
+                        <span class="text-item">Design Agency</span>
+                    </div>
+                    <!-- Duplicado -->
+                    <div class="banner-text">
+                        <span class="text-item">Senior Designer</span>
+                        <span class="text-item">Over 100 Customers</span>
+                        <span class="text-item">Brand Experience</span>
+                        <span class="text-item">Web Development</span>
+                        <span class="text-item">Graphic Design</span>
+                        <span class="text-item">UI/UX Design</span>
+                        <span class="text-item">Creative Studio</span>
+                        <span class="text-item">Design Agency</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services section -->
+        <section id="services" class="services-section position-relative py-5">
+            <div class="services-bg-text bebas-neue-regular">SERVICIOS</div>
+            <div class="container-sm">
+                <p class="subtitulos" data-aos="flip-up" data-aos-duration="400">Servicios</p>
+                <!-- Separador-->
+                <div class="section-separator" data-aos="zoom-out-right">
+                    <span class="separator-start">&lt;/</span>
+                    <span class="separator-end">&gt;</span>
+                </div>
+                <div class="row justify-content-center g-4 container-servicios">
+                    <!-- Card 1 -->
+                    <div class="col-md-4 d-flex flex-column align-items-stretch" data-aos="zoom-out-up" data-aos-duration="400">
+                        <div class="service-card active" data-card="1">
+                            <div class="service-card-header d-flex justify-content-between align-items-center">
+                                <span class="service-card-number">01</span>
+                                <span class="service-card-icon"><i class="fa-solid fa-cube"></i></span>
+                            </div>
+                            <h3 class="service-card-title">DISEÑO</h3>
+                            <div class="service-card-content">
+                                <p>
+                                    Creando diseños web visualmente impactantes y totalmente responsivos que cautivan a
+                                    tu audiencia e inician el compromiso del cliente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4" data-aos="zoom-out-up" data-aos-duration="450">
+                        <div class="service-card" data-card="2">
+                            <div class="service-card-header d-flex justify-content-between align-items-center">
+                                <span class="service-card-number">02</span>
+                                <span class="service-card-icon"><i class="fa-solid fa-code"></i></span>
+                            </div>
+                            <h3 class="service-card-title">CÓDIGO</h3>
+                            <div class="service-card-content">
+                                <p>
+                                    Código limpio, escalable y robusto para aplicaciones web, asegurando rendimiento y
+                                    mantenibilidad.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4" data-aos="zoom-out-up" data-aos-duration="500">
+                        <div class="service-card" data-card="3">
+                            <div class="service-card-header d-flex justify-content-between align-items-center">
+                                <span class="service-card-number">03</span>
+                                <span class="service-card-icon"><i class="fa-solid fa-headset"></i></span>
+                            </div>
+                            <h3 class="service-card-title">SOPORTE</h3>
+                            <div class="service-card-content">
+                                <p>
+                                    Soporte y mantenimiento continuo para mantener tu sitio web funcionando sin
+                                    problemas y de forma segura.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-md-4" data-aos="zoom-out-up" data-aos-duration="550">
+                        <div class="service-card" data-card="1">
+                            <div class="service-card-header d-flex justify-content-between align-items-center">
+                                <span class="service-card-number">01</span>
+                                <span class="service-card-icon"><i class="fa-solid fa-cube"></i></span>
+                            </div>
+                            <h3 class="service-card-title">DISEÑO</h3>
+                            <div class="service-card-content">
+                                <p>
+                                    Creando diseños web visualmente impactantes y totalmente responsivos que cautivan a
+                                    tu audiencia e inician el compromiso del cliente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-md-4" data-aos="zoom-out-up" data-aos-duration="600">
+                        <div class="service-card" data-card="2">
+                            <div class="service-card-header d-flex justify-content-between align-items-center">
+                                <span class="service-card-number">02</span>
+                                <span class="service-card-icon"><i class="fa-solid fa-code"></i></span>
+                            </div>
+                            <h3 class="service-card-title">CÓDIGO</h3>
+                            <div class="service-card-content">
+                                <p>
+                                    Código limpio, escalable y robusto para aplicaciones web, asegurando rendimiento y
+                                    mantenibilidad.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col-md-4" data-aos="zoom-out-up" data-aos-duration="650">
+                        <div class="service-card" data-card="3">
+                            <div class="service-card-header d-flex justify-content-between align-items-center">
+                                <span class="service-card-number">03</span>
+                                <span class="service-card-icon"><i class="fa-solid fa-headset"></i></span>
+                            </div>
+                            <h3 class="service-card-title">SOPORTE</h3>
+                            <div class="service-card-content">
+                                <p>
+                                    Soporte y mantenimiento continuo para mantener tu sitio web funcionando sin
+                                    problemas y de forma segura.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Services section -->
+
+        <!-- Why Choose Me -->
+
+
+        <!-- Portafolio -->
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section position-relative">
+            <!-- Texto de fondo -->
+            <div class="services-bg-text bebas-neue-regular">PORTFOLIO</div>
+
+            <div class="container-sm">
+                <p class="subtitulos" data-aos="flip-up" data-aos-duration="400">Proyectos Destacados</p>
+
+                <!-- Separador -->
+                <div class="section-separator" data-aos="zoom-out-right">
+                    <span class="separator-start">&lt;/</span>
+                    <span class="separator-end">&gt;</span>
+                </div>
+                <!-- Portfolio Grid -->
+                <!-- Filter Buttons -->
+                <div class="portfolio-filters text-center mt-5">
+                    <button class="filter-btn active" data-filter="*">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="app">Apps</button>
+                    <button class="filter-btn" data-filter="design">Diseño</button>
+                </div>
+                <div class="portfolio-grid">
+                    <!-- Proyecto 1 -->
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="project-placeholder"
+                                    style="background: linear-gradient(135deg, var(--primary-yellow), var(--secondary-orange));">
+                                    <div class="project-icon">🌐</div>
+                                </div>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h4>E-Commerce Platform</h4>
+                                        <p>React, Node.js, MongoDB</p>
+                                        <div class="project-links">
+                                            <a href="#" class="project-link">Ver Proyecto</a>
+                                            <a href="#" class="project-link">Código</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Desarrollo Web</span>
+                                <h3>Plataforma E-Commerce</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <div class="portfolio-item" data-category="app">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="project-placeholder"
+                                    style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
+                                    <div class="project-icon">📱</div>
+                                </div>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h4>Mobile Banking App</h4>
+                                        <p>React Native, Firebase</p>
+                                        <div class="project-links">
+                                            <a href="#" class="project-link">Ver Proyecto</a>
+                                            <a href="#" class="project-link">Descargar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">App Móvil</span>
+                                <h3>Banking Digital</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="project-placeholder"
+                                    style="background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));">
+                                    <div class="project-icon">🎨</div>
+                                </div>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h4>Brand Identity</h4>
+                                        <p>Figma, Illustrator, Branding</p>
+                                        <div class="project-links">
+                                            <a href="#" class="project-link">Ver Caso</a>
+                                            <a href="#" class="project-link">Behance</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Diseño</span>
+                                <h3>Identidad Corporativa</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 4 -->
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="project-placeholder"
+                                    style="background: linear-gradient(135deg, #10b981, #059669);">
+                                    <div class="project-icon">⚡</div>
+                                </div>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h4>SaaS Dashboard</h4>
+                                        <p>Vue.js, Laravel, MySQL</p>
+                                        <div class="project-links">
+                                            <a href="#" class="project-link">Demo Live</a>
+                                            <a href="#" class="project-link">GitHub</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">SaaS</span>
+                                <h3>Analytics Dashboard</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 5 -->
+                    <div class="portfolio-item" data-category="app">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="project-placeholder"
+                                    style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                                    <div class="project-icon">🎵</div>
+                                </div>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h4>Music Streaming</h4>
+                                        <p>Flutter, Firebase, Stripe</p>
+                                        <div class="project-links">
+                                            <a href="#" class="project-link">App Store</a>
+                                            <a href="#" class="project-link">Play Store</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Streaming</span>
+                                <h3>Plataforma Musical</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 6 -->
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="project-placeholder"
+                                    style="background: linear-gradient(135deg, #ef4444, #dc2626);">
+                                    <div class="project-icon">🚀</div>
+                                </div>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h4>Startup Landing</h4>
+                                        <p>Next.js, Framer Motion, CMS</p>
+                                        <div class="project-links">
+                                            <a href="#" class="project-link">Visitar</a>
+                                            <a href="#" class="project-link">Caso de Estudio</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="portfolio-category">Landing</span>
+                                <h3>Tech Startup</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- FinPortafolio -->
+
+        <!-- Contactame -->
+        <section class="about-section position-relative">
+
+            <div class="services-bg-text-2 bebas-neue-regular">Contacto</div>
+            <div class="contact-section">
+                <div class="floating-shapes">
+                    <div class="shape shape-4"></div>
+                    <div class="shape shape-5"></div>
+                    <div class="shape shape-6"></div>
+                </div>
+                <div class="container-sm">
+                    <p class="subtitulos" data-aos="flip-up" data-aos-duration="400">Contáctame</p>
+                    <!-- Separador-->
+                    <div class="section-separator" data-aos="zoom-out-right">
+                        <span class="separator-start">&lt;/</span>
+                        <span class="separator-end">&gt;</span>
+                    </div>
+                    <div class="contact-container">
+
+                        <div class="contact-content">
+                            <h2 class="contact-title" data-aos="zoom-in-right" data-aos-offset="400">¡Trabajemos Juntos!</h2>
+                            <p class="contact-subtitle" data-aos="fade-right" data-aos-offset="400" data-aos-duration="400">
+                                ¿Tienes un proyecto en mente? Me especializo en crear soluciones digitales
+                                innovadoras que impulsan el crecimiento de tu negocio.
+                            </p>
+                            <div class="social-links" data-aos="zoom-in-right" data-aos-offset="300" >
+                                <a href="#" class="social-icon social-btn" data-social="tiktok" title="Tik Tok"><i class="bi bi-tiktok"></i></a>
+                                <a href="#" class="social-icon social-btn" data-social="github" title="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="#" class="social-icon social-btn" data-social="email" title="Gmail"><i class="bi bi-envelope"></i></a>
+                                <a href="#" class="social-icon social-btn" data-social="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div data-aos="zoom-in-left" data-aos-offset="400">
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-group">
+                                    <input type="text" class="form-input" placeholder="Tu nombre" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-input" placeholder="Tu email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-input" placeholder="Asunto">
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea class="form-input form-textarea" placeholder="Cuéntame sobre tu proyecto..."
+                                        required></textarea>
+                                </div>
+
+                                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="flash-overlay" id="flashOverlay"></div>
+        <!-- Fin Contactame -->
+
+        <footer class="footer-section">
+            <div class="footer-particles">
+                <div class="floating-line"></div>
+                <div class="glow-orb"></div>
+            </div>
+
+            <div class="code-snippet">
+                <div>// Creando el futuro</div>
+                <div>const developer = {</div>
+                <div>&nbsp;&nbsp;passion: true,</div>
+                <div>&nbsp;&nbsp;innovation: 'always'</div>
+                <div>};</div>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo" id="footerLogo">miguelt.dev</div>
+                        <p class="footer-description">
+                            Transformando ideas en soluciones digitales excepcionales.
+                            Especializándome en crear experiencias web innovadoras que impulsan el crecimiento de tu
+                            negocio.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" data-social="tiktok"><i class="bi bi-tiktok"></i></a>
+                            <a href="#" class="social-link" data-social="github"><i class="bi bi-github"></i></a>
+                            <a href="#" class="social-link" data-social="email"><i class="bi bi-envelope"></i></a>
+                            <a href="#" class="social-link" data-social="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-title">Servicios</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" class="footer-link">Desarrollo Web</a></li>
+                            <li><a href="#" class="footer-link">Aplicaciones Móviles</a></li>
+                            <li><a href="#" class="footer-link">E-commerce</a></li>
+                            <li><a href="#" class="footer-link">Consultoría Tech</a></li>
+                            <li><a href="#" class="footer-link">Mantenimiento</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-title">Enlaces</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" class="footer-link">Sobre Mí</a></li>
+                            <li><a href="#" class="footer-link">Portafolio</a></li>
+                            <li><a href="#" class="footer-link">Blog</a></li>
+                            <li><a href="#" class="footer-link">Contacto</a></li>
+                            <li><a href="#" class="footer-link">Testimonios</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="footer-copyright">
+                        © 2025 miguelt.dev - Todos los derechos reservados.
+                    </p>
+                    <a href="#top" class="footer-back-to-top" id="backToTop">
+                        <span>Volver arriba</span>
+                        <svg viewBox="0 0 24 24">
+                            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+</body>
+
+</html>
