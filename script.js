@@ -435,7 +435,7 @@ document.querySelectorAll('.social-link').forEach(link => {
     });
 
     link.addEventListener('click', function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         gsap.timeline()
             .to(this, {
                 scale: 0.9,
@@ -623,7 +623,7 @@ function createRipple(e, color = 'var(--primary-yellow)') {
 // Función para crear flash de color
 function createFlash(color) {
     const flashOverlay = document.getElementsByClassName('flash-overlay');
-    flashOverlay.style.background = `radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), ${color} 0%, transparent 50%)`;
+    // flashOverlay.style.background = `radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), ${color} 0%, transparent 50%)`;
 
     gsap.timeline()
         .to(flashOverlay, {
@@ -1020,7 +1020,54 @@ document.querySelectorAll('.service-card').forEach(card => {
 // FIN SERVICIOS
 
 
-// ANIMACIONES TEXTOS
+ // Intersection Observer para animaciones en scroll
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const element = entry.target;
+            const delay = element.getAttribute('data-delay') || 0;
+            
+            setTimeout(() => {
+                element.classList.add('animated');
+                
+                // Animar barras de progreso
+                const progressBars = element.querySelectorAll('.progress-bar');
+                progressBars.forEach(bar => {
+                    const width = bar.getAttribute('data-width');
+                    setTimeout(() => {
+                        bar.style.width = width + '%';
+                    }, 200);
+                });
+            }, delay);
+            
+            observer.unobserve(element);
+        }
+    });
+}, observerOptions);
+// Observar elementos animados
+document.addEventListener('DOMContentLoaded', function() {
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    animatedElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+// Efecto hover adicional para las tarjetas
+document.querySelectorAll('.expertise-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-8px) scale(1.02)';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+    });
+});
 
-// FIN ANIMACIONES TEXTOS
 
+// Función para manejar el envío del formulario con reCAPTCHA
+function onSubmit(token) {
+    document.getElementById("contact-form").submit();
+}
