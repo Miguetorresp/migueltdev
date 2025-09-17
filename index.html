@@ -4,7 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>miguelt.dev</title>
+    <!-- Meta description principal -->
+    <meta name="description" content="Miguel Torres, desarrollador full stack experto en React, Laravel, Python y Node.js. Transformo ideas en soluciones digitales exitosas. +3 años de experiencia en Quito, Ecuador. Consulta gratuita disponible.">
+
+    <!-- Palabras clave -->
+    <meta name="keywords" content="desarrollador full stack, desarrollo web Ecuador, programador React, Laravel developer, Python developer, desarrollo e-commerce, aplicaciones web, Quito desarrollador, consultoría tecnológica, optimización web, paginas web profesionales, soluciones digitales, desarrollo a medida, freelance developer, desarrollo front-end, desarrollo back-end">
+
+    <!-- Meta tags de autor y copyright -->
+    <meta name="author" content="Miguel Torres">
+    <meta name="copyright" content="© 2025 Miguel Torres - miguelt.dev">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- Información de contacto -->
+    <meta name="contact" content="miguetorres30@gmail.com">
+    <meta name="reply-to" content="miguetorres30@gmail.com">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -17,6 +33,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+     <script src="https://www.google.com/recaptcha/api.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script> -->
      <!-- <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script> -->
      
@@ -58,7 +75,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
             <div class="container">
-                <a class="navbar-brand icono-principal" href="#"><span class="color-amarillo">&lt;/&gt;</span>
+                <a class="navbar-brand icono-principal" href="index.html"><span class="color-amarillo">&lt;/&gt;</span>
                     miguelt.dev</a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav">
@@ -69,14 +86,10 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#home"><i
                                     class="bi bi-house-door color-amarillo"></i> Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services"><i
-                                    class="bi bi-person color-amarillo"></i> Acerca de mí</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about"><i
+                                    class="bi bi-person color-amarillo"></i> Acerca de mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services"><i
                                     class="bi bi-briefcase color-amarillo"></i> Servicios </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#experience"><i
-                                    class="bi bi-hand-thumbs-up color-amarillo"></i> ¿Por qué elegirme?</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio"><i
-                                    class="bi bi-folder color-amarillo"></i> Proyectos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact"><i
                                     class="bi bi-envelope color-amarillo"></i> Contacto</a></li>
                     </ul>
@@ -97,7 +110,7 @@
         </div>
 
         <!-- Hero Section -->
-        <section class="hero-section position-relative">
+        <section class="hero-section position-relative" id="home">
             <div class="container-sm p-0" id="top">
                 <div class="d-flex justify-content-center align-items-center min-vh-100 gap-4 flex-wrap">
                     <!-- Text Content -->
@@ -113,10 +126,10 @@
                                 <span class="title-line bebas-neue-regular">Developer</span>
                             </h1>
 
-                            <p class="subtitle">Hola 👋, soy un apasionado del software</p>
-                            <p class="subtitle">y hago que el código baile al ritmo de tus ideas</p>
+                            <p class="subtitle">Hola 👋, soy un experto en desarrollo web.</p>
+                            <p class="subtitle">Si tienes una idea, yo la hago realidad.</p>
 
-                            <div class="status-section d-flex align-items-center">
+                            <div class="status-section d-flex align-items-center mt-3">
                                 <div class="status-dot"></div>
                                 <span class="status-text">Freelancer Disponible</span>
                             </div>
@@ -128,10 +141,10 @@
                                 <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                             </div> -->
                             <div class="social-links">
-                                <a href="#" class="social-icon social-btn" data-social="tiktok" title="Tik Tok"><i class="bi bi-tiktok"></i></a>
-                                <a href="#" class="social-icon social-btn" data-social="github" title="GitHub"><i class="bi bi-github"></i></a>
-                                <a href="#" class="social-icon social-btn" data-social="email" title="Gmail"><i class="bi bi-envelope"></i></a>
-                                <a href="#" class="social-icon social-btn" data-social="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-icon" data-social="tiktok" title="Tik Tok"><i class="bi bi-tiktok"></i></a>
+                                <a href="https://github.com/Migueltorresp" target="_blank" class="social-icon" data-social="github" title="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="mailto:migueltorres30@gmail.com" class="social-icon" data-social="email" title="Gmail"><i class="bi bi-envelope"></i></a>
+                                <a href="https://www.linkedin.com/in/miguel-torres-4690bb1b2/" target="_blank" class="social-icon" data-social="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
@@ -142,7 +155,7 @@
                                 <div class="geometric-shape shape-2"></div>
                                 <div class="geometric-shape shape-3"></div>
                             </div>
-                            <img src="./images/persona.png" alt="Foto persona" class="person-img">
+                            <img src="./images/persona.png" alt="Miguel Torres - Desarrollador Full Stack" class="person-img">
                         </div>
                     </div>
                 </div>
@@ -168,22 +181,179 @@
                     </div>
                     <!-- Texto -->
                     <div class="col-md-7">
-                        <p class="about-intro mb-2 " data-aos="fade-up" data-aos-anchor-placement="top-center">
-                            ¡Hola! Soy un apasionado del desarrollo web, con más de 9 años de experiencia, basado en
-                            Lima
-                            <span class="about-location"><i class="fa-solid fa-location-dot"></i> Ecuador</span>
-                        </p>
-                        <p class="subtitle mb-3" data-aos="zoom-in-left" data-aos-offset="400">Mis habilidades son diversas y me permiten abordar proyectos desde diferentes perspectivas, asegurando un enfoque integral y efectivo. Mis fortalezas incluyen:</p>
-                        <ul class="about-list mb-3">
-                            <li data-aos="fade-left" data-aos-offset="400" data-aos-duration="400"><i class="fa-solid fa-circle-check"></i> Diseño gráfico</li>
-                            <li data-aos="fade-left" data-aos-offset="400" data-aos-duration="450"><i class="fa-solid fa-circle-check"></i> Desarrollo web</li>
-                            <li data-aos="fade-left" data-aos-offset="400" data-aos-duration="500"><i class="fa-solid fa-circle-check"></i> UI/UX</li>
-                            <li data-aos="fade-left" data-aos-offset="400" data-aos-duration="550"><i class="fa-solid fa-circle-check"></i> Investigación de mercado</li>
-                        </ul>
-                        <p class="about-special mb-0" data-aos="zoom-in-left" data-aos-offset="400">
-                            Especializado en crear productos digitales para plataformas móviles y de escritorio, mi
-                            objetivo es entregar soluciones innovadoras que sean funcionales y atractivas.
-                        </p>
+                        <!-- <p class="about-intro mb-2 " data-aos="fade-up" data-aos-anchor-placement="top-center">
+                            Me especializo en construir soluciones que no solo se ven increíbles, sino que también funcionan a la perfección. Si tienes un proyecto en mente, hablemos. Juntos, podemos hacerlo realidad.
+                            
+                        </p> -->
+                        <p class="about-intro mb-3">No solo escribo código, <i class="bi bi-laptop-code"></i> creo experiencias...</p>
+                        <div class="">
+                            <p class="subtitle mb-3">
+                                Mi enfoque va <span class="highlight">más allá</span> de crear productos digitales que simplemente se vean bien; me esfuerzo por construir <span class="highlight">experiencias</span> que realmente funcionen, que sean intuitivas, poderosas y que resuenen con las personas. Cada proyecto es una oportunidad para <span class="highlight">fusionar</span> diseño, tecnología y funcionalidad de manera que no solo sorprenda, sino que haga la <span class="highlight">diferencia</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <!-- Frontend Development -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="expertise-card animate-on-scroll" data-delay="100">
+                            <div class="card-header">
+                                <div class="card-icon frontend-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3 class="card-title">Frontend Development</h3>
+                            </div>
+        
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <span>React & Next.js</span>
+                                        <span class="skill-percentage">95%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar frontend-bar" data-width="95"></div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <span>TypeScript</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar frontend-bar" data-width="90"></div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <span>CSS Avanzado</span>
+                                        <span class="skill-percentage">95%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar frontend-bar" data-width="95"></div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <span>Animaciones Web</span>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar frontend-bar" data-width="85"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Backend & APIs -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="expertise-card animate-on-scroll" data-delay="200">
+                            <div class="card-header">
+                                <div class="card-icon backend-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <h3 class="card-title">Backend & APIs</h3>
+                            </div>
+        
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <span>Node.js</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar backend-bar" data-width="90"></div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <span>RESTful APIs</span>
+                                        <span class="skill-percentage">95%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar backend-bar" data-width="95"></div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <span>GraphQL</span>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar backend-bar" data-width="85"></div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <span>Bases de Datos</span>
+                                        <span class="skill-percentage">88%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar backend-bar" data-width="88"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Performance & DevOps -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="expertise-card animate-on-scroll" data-delay="300">
+                            <div class="card-header">
+                                <div class="card-icon devops-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h3 class="card-title">Performance & DevOps</h3>
+                            </div>
+        
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <span>Optimización Web</span>
+                                        <span class="skill-percentage">92%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar devops-bar" data-width="92"></div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <span>CI/CD</span>
+                                        <span class="skill-percentage">88%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar devops-bar" data-width="88"></div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <span>Docker</span>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar devops-bar" data-width="85"></div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <span>AWS</span>
+                                        <span class="skill-percentage">82%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar devops-bar" data-width="82"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,29 +361,29 @@
         <!-- End About me -->
 
         <!-- Cinta animada tipo diseño -->
-        <div class="div-cinta" data-aos="zoom-in-up" data-aos-offset="400" data-aos-duration="400">
+        <div class="div-cinta">
             <div class="diagonal-banner orange-banner">
                 <div class="banner-track">
                     <div class="banner-text">
-                        <span class="text-item">Logo Design</span>
-                        <span class="text-item">Website Design</span>
-                        <span class="text-item">Brand Design</span>
-                        <span class="text-item">User Experience</span>
-                        <span class="text-item">Senior Designer</span>
-                        <span class="text-item">Creative Design</span>
-                        <span class="text-item">Portfolio</span>
-                        <span class="text-item">Digital Agency</span>
+                        <span class="text-item">Desarrollo Web</span>
+                        <span class="text-item">Programador Full Stack</span>
+                        <span class="text-item">Optimización SEO</span>
+                        <span class="text-item">Aplicaciones Web</span>
+                        <span class="text-item">Desarrollo de API's</span>
+                        <span class="text-item">Diseño Creativo</span>
+                        <span class="text-item">Desarrollo Personalizado</span>
+                        <span class="text-item">E-commerce</span>
                     </div>
                     <!-- Duplicado -->
                     <div class="banner-text">
-                        <span class="text-item">Logo Design</span>
-                        <span class="text-item">Website Design</span>
-                        <span class="text-item">Brand Design</span>
-                        <span class="text-item">User Experience</span>
-                        <span class="text-item">Senior Designer</span>
-                        <span class="text-item">Creative Design</span>
-                        <span class="text-item">Portfolio</span>
-                        <span class="text-item">Digital Agency</span>
+                        <span class="text-item">Desarrollo Web</span>
+                        <span class="text-item">Programador Full Stack</span>
+                        <span class="text-item">Optimización SEO</span>
+                        <span class="text-item">Aplicaciones Web</span>
+                        <span class="text-item">Desarrollo de API's</span>
+                        <span class="text-item">Diseño Creativo</span>
+                        <span class="text-item">Desarrollo Personalizado</span>
+                        <span class="text-item">E-commerce</span>
                     </div>
                 </div>
             </div>
@@ -221,25 +391,31 @@
             <div class="diagonal-banner black-banner">
                 <div class="banner-track reverse">
                     <div class="banner-text">
-                        <span class="text-item">Senior Designer</span>
-                        <span class="text-item">Over 100 Customers</span>
-                        <span class="text-item">Brand Experience</span>
-                        <span class="text-item">Web Development</span>
-                        <span class="text-item">Graphic Design</span>
-                        <span class="text-item">UI/UX Design</span>
-                        <span class="text-item">Creative Studio</span>
-                        <span class="text-item">Design Agency</span>
+                        <span class="text-item">Python</span>
+                        <span class="text-item">React JS</span>
+                        <span class="text-item">PHP</span>
+                        <span class="text-item">JAVA</span>
+                        <span class="text-item">SQL / NoSQL</span>
+                        <span class="text-item">AWS</span>
+                        <span class="text-item">JavaScript</span>
+                        <span class="text-item">Angular</span>
+                        <span class="text-item">Node JS</span>
+                        <span class="text-item">Angular</span>
+                        <span class="text-item">TypeScript</span>
                     </div>
                     <!-- Duplicado -->
                     <div class="banner-text">
-                        <span class="text-item">Senior Designer</span>
-                        <span class="text-item">Over 100 Customers</span>
-                        <span class="text-item">Brand Experience</span>
-                        <span class="text-item">Web Development</span>
-                        <span class="text-item">Graphic Design</span>
-                        <span class="text-item">UI/UX Design</span>
-                        <span class="text-item">Creative Studio</span>
-                        <span class="text-item">Design Agency</span>
+                        <span class="text-item">Python</span>
+                        <span class="text-item">React JS</span>
+                        <span class="text-item">PHP</span>
+                        <span class="text-item">JAVA</span>
+                        <span class="text-item">SQL / NoSQL</span>
+                        <span class="text-item">AWS</span>
+                        <span class="text-item">JavaScript</span>
+                        <span class="text-item">Angular</span>
+                        <span class="text-item">Node JS</span>
+                        <span class="text-item">Angular</span>
+                        <span class="text-item">TypeScript</span>
                     </div>
                 </div>
             </div>
@@ -261,13 +437,12 @@
                         <div class="service-card active" data-card="1">
                             <div class="service-card-header d-flex justify-content-between align-items-center">
                                 <span class="service-card-number">01</span>
-                                <span class="service-card-icon"><i class="fa-solid fa-cube"></i></span>
+                                <span class="service-card-icon"><i class="fa-solid fa-lightbulb"></i></span>
                             </div>
-                            <h3 class="service-card-title">DISEÑO</h3>
+                            <h3 class="service-card-title">CONSULTORÍA TECH</h3>
                             <div class="service-card-content">
                                 <p>
-                                    Creando diseños web visualmente impactantes y totalmente responsivos que cautivan a
-                                    tu audiencia e inician el compromiso del cliente.
+                                    Estrategia tecnológica que acelera tu crecimiento. Analizo tu negocio y diseño la hoja de ruta digital perfecta para alcanzar tus objetivos.
                                 </p>
                             </div>
                         </div>
@@ -279,11 +454,10 @@
                                 <span class="service-card-number">02</span>
                                 <span class="service-card-icon"><i class="fa-solid fa-code"></i></span>
                             </div>
-                            <h3 class="service-card-title">CÓDIGO</h3>
+                            <h3 class="service-card-title">DESARROLLO WEB</h3>
                             <div class="service-card-content">
                                 <p>
-                                    Código limpio, escalable y robusto para aplicaciones web, asegurando rendimiento y
-                                    mantenibilidad.
+                                    Código limpio, escalable y optimizado para SEO. Desarrollo aplicaciones web rápidas que posicionan tu marca en los primeros resultados de Google.
                                 </p>
                             </div>
                         </div>
@@ -293,45 +467,42 @@
                         <div class="service-card" data-card="3">
                             <div class="service-card-header d-flex justify-content-between align-items-center">
                                 <span class="service-card-number">03</span>
-                                <span class="service-card-icon"><i class="fa-solid fa-headset"></i></span>
+                                <span class="service-card-icon"><i class="fa-solid fa-shopping-cart"></i></span>
                             </div>
-                            <h3 class="service-card-title">SOPORTE</h3>
+                            <h3 class="service-card-title">E-COMMERCE</h3>
                             <div class="service-card-content">
                                 <p>
-                                    Soporte y mantenimiento continuo para mantener tu sitio web funcionando sin
-                                    problemas y de forma segura.
+                                    Tiendas online que venden 24/7. Desarrollo plataformas e-commerce completas con pasarelas de pago, gestión de inventario y análisis de ventas integrados.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <!-- Card 4 -->
-                    <div class="col-md-4" data-aos="zoom-out-up" data-aos-duration="550">
-                        <div class="service-card" data-card="1">
+                     <div class="col-md-4" data-aos="zoom-out-up" data-aos-duration="600">
+                        <div class="service-card" data-card="2">
                             <div class="service-card-header d-flex justify-content-between align-items-center">
-                                <span class="service-card-number">01</span>
-                                <span class="service-card-icon"><i class="fa-solid fa-cube"></i></span>
+                                <span class="service-card-number">04</span>
+                                <span class="service-card-icon"><i class="fa-solid fa-palette"></i></span>
                             </div>
-                            <h3 class="service-card-title">DISEÑO</h3>
+                            <h3 class="service-card-title">DISEÑO UX/UI</h3>
                             <div class="service-card-content">
                                 <p>
-                                    Creando diseños web visualmente impactantes y totalmente responsivos que cautivan a
-                                    tu audiencia e inician el compromiso del cliente.
+                                    Creo interfaces intuitivas y atractivas que convierten visitantes en clientes, optimizando cada elemento para máxima usabilidad y conversión.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <!-- Card 5 -->
-                    <div class="col-md-4" data-aos="zoom-out-up" data-aos-duration="600">
-                        <div class="service-card" data-card="2">
+                     <div class="col-md-4" data-aos="zoom-out-up" data-aos-duration="550">
+                        <div class="service-card" data-card="1">
                             <div class="service-card-header d-flex justify-content-between align-items-center">
-                                <span class="service-card-number">02</span>
-                                <span class="service-card-icon"><i class="fa-solid fa-code"></i></span>
+                                <span class="service-card-number">05</span>
+                                <span class="service-card-icon"><i class="fa-solid fa-server"></i></span>
                             </div>
-                            <h3 class="service-card-title">CÓDIGO</h3>
+                            <h3 class="service-card-title">MANTENIMIENTO & HOSTING</h3>
                             <div class="service-card-content">
                                 <p>
-                                    Código limpio, escalable y robusto para aplicaciones web, asegurando rendimiento y
-                                    mantenibilidad.
+                                    Tu sitio web siempre online y actualizado. Servicio completo de hosting, monitoreo 24/7, actualizaciones de seguridad y backups automáticos garantizados.
                                 </p>
                             </div>
                         </div>
@@ -340,14 +511,13 @@
                     <div class="col-md-4" data-aos="zoom-out-up" data-aos-duration="650">
                         <div class="service-card" data-card="3">
                             <div class="service-card-header d-flex justify-content-between align-items-center">
-                                <span class="service-card-number">03</span>
+                                <span class="service-card-number">06</span>
                                 <span class="service-card-icon"><i class="fa-solid fa-headset"></i></span>
                             </div>
-                            <h3 class="service-card-title">SOPORTE</h3>
+                            <h3 class="service-card-title">SOPORTE 24/7</h3>
                             <div class="service-card-content">
                                 <p>
-                                    Soporte y mantenimiento continuo para mantener tu sitio web funcionando sin
-                                    problemas y de forma segura.
+                                    Mantenimiento proactivo y soporte técnico continuo para garantizar que tu sitio web funcione perfectamente y genere resultados constantes.
                                 </p>
                             </div>
                         </div>
@@ -356,195 +526,6 @@
             </div>
         </section>
         <!-- End Services section -->
-
-        <!-- Why Choose Me -->
-
-
-        <!-- Portafolio -->
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio-section position-relative">
-            <!-- Texto de fondo -->
-            <div class="services-bg-text bebas-neue-regular">PORTFOLIO</div>
-
-            <div class="container-sm">
-                <p class="subtitulos" data-aos="flip-up" data-aos-duration="400">Proyectos Destacados</p>
-
-                <!-- Separador -->
-                <div class="section-separator" data-aos="zoom-out-right">
-                    <span class="separator-start">&lt;/</span>
-                    <span class="separator-end">&gt;</span>
-                </div>
-                <!-- Portfolio Grid -->
-                <!-- Filter Buttons -->
-                <div class="portfolio-filters text-center mt-5">
-                    <button class="filter-btn active" data-filter="*">Todos</button>
-                    <button class="filter-btn" data-filter="web">Web</button>
-                    <button class="filter-btn" data-filter="app">Apps</button>
-                    <button class="filter-btn" data-filter="design">Diseño</button>
-                </div>
-                <div class="portfolio-grid">
-                    <!-- Proyecto 1 -->
-                    <div class="portfolio-item" data-category="web">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
-                                <div class="project-placeholder"
-                                    style="background: linear-gradient(135deg, var(--primary-yellow), var(--secondary-orange));">
-                                    <div class="project-icon">🌐</div>
-                                </div>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <h4>E-Commerce Platform</h4>
-                                        <p>React, Node.js, MongoDB</p>
-                                        <div class="project-links">
-                                            <a href="#" class="project-link">Ver Proyecto</a>
-                                            <a href="#" class="project-link">Código</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <span class="portfolio-category">Desarrollo Web</span>
-                                <h3>Plataforma E-Commerce</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Proyecto 2 -->
-                    <div class="portfolio-item" data-category="app">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
-                                <div class="project-placeholder"
-                                    style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
-                                    <div class="project-icon">📱</div>
-                                </div>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <h4>Mobile Banking App</h4>
-                                        <p>React Native, Firebase</p>
-                                        <div class="project-links">
-                                            <a href="#" class="project-link">Ver Proyecto</a>
-                                            <a href="#" class="project-link">Descargar</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <span class="portfolio-category">App Móvil</span>
-                                <h3>Banking Digital</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Proyecto 3 -->
-                    <div class="portfolio-item" data-category="design">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
-                                <div class="project-placeholder"
-                                    style="background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));">
-                                    <div class="project-icon">🎨</div>
-                                </div>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <h4>Brand Identity</h4>
-                                        <p>Figma, Illustrator, Branding</p>
-                                        <div class="project-links">
-                                            <a href="#" class="project-link">Ver Caso</a>
-                                            <a href="#" class="project-link">Behance</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <span class="portfolio-category">Diseño</span>
-                                <h3>Identidad Corporativa</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Proyecto 4 -->
-                    <div class="portfolio-item" data-category="web">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
-                                <div class="project-placeholder"
-                                    style="background: linear-gradient(135deg, #10b981, #059669);">
-                                    <div class="project-icon">⚡</div>
-                                </div>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <h4>SaaS Dashboard</h4>
-                                        <p>Vue.js, Laravel, MySQL</p>
-                                        <div class="project-links">
-                                            <a href="#" class="project-link">Demo Live</a>
-                                            <a href="#" class="project-link">GitHub</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <span class="portfolio-category">SaaS</span>
-                                <h3>Analytics Dashboard</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Proyecto 5 -->
-                    <div class="portfolio-item" data-category="app">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
-                                <div class="project-placeholder"
-                                    style="background: linear-gradient(135deg, #f59e0b, #d97706);">
-                                    <div class="project-icon">🎵</div>
-                                </div>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <h4>Music Streaming</h4>
-                                        <p>Flutter, Firebase, Stripe</p>
-                                        <div class="project-links">
-                                            <a href="#" class="project-link">App Store</a>
-                                            <a href="#" class="project-link">Play Store</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <span class="portfolio-category">Streaming</span>
-                                <h3>Plataforma Musical</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Proyecto 6 -->
-                    <div class="portfolio-item" data-category="design">
-                        <div class="portfolio-card">
-                            <div class="portfolio-image">
-                                <div class="project-placeholder"
-                                    style="background: linear-gradient(135deg, #ef4444, #dc2626);">
-                                    <div class="project-icon">🚀</div>
-                                </div>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <h4>Startup Landing</h4>
-                                        <p>Next.js, Framer Motion, CMS</p>
-                                        <div class="project-links">
-                                            <a href="#" class="project-link">Visitar</a>
-                                            <a href="#" class="project-link">Caso de Estudio</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <span class="portfolio-category">Landing</span>
-                                <h3>Tech Startup</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-
-        <!-- FinPortafolio -->
 
         <!-- Contactame -->
         <section class="about-section position-relative">
@@ -569,35 +550,45 @@
                             <h2 class="contact-title" data-aos="zoom-in-right" data-aos-offset="400">¡Trabajemos Juntos!</h2>
                             <p class="contact-subtitle" data-aos="fade-right" data-aos-offset="400" data-aos-duration="400">
                                 ¿Tienes un proyecto en mente? Me especializo en crear soluciones digitales
-                                innovadoras que impulsan el crecimiento de tu negocio.
+                                innovadoras que impulsan el crecimiento de tu <span class="highlight">negocio</span>.
                             </p>
                             <div class="social-links" data-aos="zoom-in-right" data-aos-offset="300" >
-                                <a href="#" class="social-icon social-btn" data-social="tiktok" title="Tik Tok"><i class="bi bi-tiktok"></i></a>
-                                <a href="#" class="social-icon social-btn" data-social="github" title="GitHub"><i class="bi bi-github"></i></a>
-                                <a href="#" class="social-icon social-btn" data-social="email" title="Gmail"><i class="bi bi-envelope"></i></a>
-                                <a href="#" class="social-icon social-btn" data-social="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-icon" data-social="tiktok" title="Tik Tok"><i class="bi bi-tiktok"></i></a>
+                                <a href="https://github.com/Migueltorresp" target="_blank" class="social-icon" data-social="github" title="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="mailto:migueltorres30@gmail.com" class="social-icon" data-social="email" title="Gmail"><i class="bi bi-envelope"></i></a>
+                                <a href="https://www.linkedin.com/in/miguel-torres-4690bb1b2/" target="_blank" class="social-icon" data-social="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                         <div data-aos="zoom-in-left" data-aos-offset="400">
-                            <form class="contact-form" id="contactForm">
+                            <form class="contact-form" id="contactForm" method="POST" action="mail.php">
                                 <div class="form-group">
-                                    <input type="text" class="form-input" placeholder="Tu nombre" required>
+                                    <input type="text" class="form-input" name="name" placeholder="Tu nombre" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="email" class="form-input" placeholder="Tu email" required>
+                                    <input type="email" class="form-input" name="email" placeholder="Tu email" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="text" class="form-input" placeholder="Asunto">
+                                    <input type="text" class="form-input" name="subject" placeholder="Asunto">
                                 </div>
 
                                 <div class="form-group">
-                                    <textarea class="form-input form-textarea" placeholder="Cuéntame sobre tu proyecto..."
+                                    <textarea class="form-input form-textarea" name="message" placeholder="Cuéntame sobre tu proyecto..."
                                         required></textarea>
                                 </div>
 
-                                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                                <!-- reCAPTCHA checkbox -->
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="6LcH3ssrAAAAAHqc6-deOLG9MYNlow8rGdErnerZ"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="submit-btn">Enviar</button>
+                                </div>
+                                <div class="mensaje-estado" id="form-message">
+                                    <!-- Aquí se mostrarán los mensajes de éxito o error -->
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -626,38 +617,18 @@
                     <div class="footer-brand">
                         <div class="footer-logo" id="footerLogo">miguelt.dev</div>
                         <p class="footer-description">
-                            Transformando ideas en soluciones digitales excepcionales.
-                            Especializándome en crear experiencias web innovadoras que impulsan el crecimiento de tu
-                            negocio.
+                            ¿Listo para colaborar o tienes un proyecto en mente? ¡Hagamos algo increíble juntos!
                         </p>
+                        <div class="footer-contact">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>Quito, Ecuador</span>
+                        </div>
                         <div class="footer-social">
                             <a href="#" class="social-link" data-social="tiktok"><i class="bi bi-tiktok"></i></a>
-                            <a href="#" class="social-link" data-social="github"><i class="bi bi-github"></i></a>
-                            <a href="#" class="social-link" data-social="email"><i class="bi bi-envelope"></i></a>
-                            <a href="#" class="social-link" data-social="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Migueltorresp" target="_blank" class="social-link" data-social="github"><i class="bi bi-github"></i></a>
+                            <a href="mailto:migueltorres30@gmail.com" class="social-link" data-social="email"><i class="bi bi-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/miguel-torres-4690bb1b2/" target="_blank" class="social-link" data-social="linkedin"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-                    </div>
-
-                    <div class="footer-column">
-                        <h4 class="footer-title">Servicios</h4>
-                        <ul class="footer-links">
-                            <li><a href="#" class="footer-link">Desarrollo Web</a></li>
-                            <li><a href="#" class="footer-link">Aplicaciones Móviles</a></li>
-                            <li><a href="#" class="footer-link">E-commerce</a></li>
-                            <li><a href="#" class="footer-link">Consultoría Tech</a></li>
-                            <li><a href="#" class="footer-link">Mantenimiento</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-column">
-                        <h4 class="footer-title">Enlaces</h4>
-                        <ul class="footer-links">
-                            <li><a href="#" class="footer-link">Sobre Mí</a></li>
-                            <li><a href="#" class="footer-link">Portafolio</a></li>
-                            <li><a href="#" class="footer-link">Blog</a></li>
-                            <li><a href="#" class="footer-link">Contacto</a></li>
-                            <li><a href="#" class="footer-link">Testimonios</a></li>
-                        </ul>
                     </div>
                 </div>
 
@@ -678,6 +649,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="animation.js"></script>
-</body>
+    
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(e){
+            e.preventDefault();
 
+            const form = e.target;
+            const formData = new FormData(form);
+
+            fetch("mail.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("form-message").innerHTML = data;
+                form.reset(); // opcional: limpiar formulario
+                 grecaptcha.reset(); // resetea el captcha
+            })
+            .catch(error => {
+                document.getElementById("form-message").innerHTML = '<div class="alert alert-danger alert-dismissible fade show" role="alert">'+
+                '<p style="text-align: center;"><strong>Error al enviar el mensaje.</strong><br>Intenta más tarde.</p>'+
+                '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>'+
+                '</div>';
+            });
+        });
+    </script>
+</body>
 </html>
