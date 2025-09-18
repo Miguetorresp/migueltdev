@@ -28,12 +28,14 @@
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="https://unpkg.com/transition-style">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-     <script src="https://www.google.com/recaptcha/api.js"></script>
+ 
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script> -->
      <!-- <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script> -->
      
@@ -499,10 +501,10 @@
                                 <span class="service-card-number">05</span>
                                 <span class="service-card-icon"><i class="fa-solid fa-server"></i></span>
                             </div>
-                            <h3 class="service-card-title">MANTENIMIENTO & HOSTING</h3>
+                            <h3 class="service-card-title">DOMINIO & HOSTING</h3>
                             <div class="service-card-content">
                                 <p>
-                                    Tu sitio web siempre online y actualizado. Servicio completo de hosting, monitoreo 24/7, actualizaciones de seguridad y backups automáticos garantizados.
+                                    Tu sitio web siempre online, actualizado y con Dominio. Servicio completo de hosting, monitoreo 24/7, actualizaciones de seguridad y backups automáticos garantizados.
                                 </p>
                             </div>
                         </div>
@@ -560,7 +562,7 @@
                             </div>
                         </div>
                         <div data-aos="zoom-in-left" data-aos-offset="400">
-                            <form class="contact-form" id="contactForm" method="POST" action="mail.php">
+                            <form class="contact-form pageclip-form" id="contactForm" action="https://send.pageclip.co/QrlrhCdJwWfpsE7T75E6PF1i4SzWuA44/formcontacto" method="post">
                                 <div class="form-group">
                                     <input type="text" class="form-input" name="name" placeholder="Tu nombre" required>
                                 </div>
@@ -579,16 +581,16 @@
                                 </div>
 
                                 <!-- reCAPTCHA checkbox -->
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <div class="g-recaptcha" data-sitekey="6LcH3ssrAAAAAHqc6-deOLG9MYNlow8rGdErnerZ"></div>
-                                </div>
+                                </div> -->
 
                                 <div class="form-group">
-                                    <button type="submit" class="submit-btn">Enviar</button>
+                                    <button type="submit" class="submit-btn pageclip-form__submit">Enviar</button>
                                 </div>
-                                <div class="mensaje-estado" id="form-message">
+                                <!-- <div class="mensaje-estado" id="form-message"> -->
                                     <!-- Aquí se mostrarán los mensajes de éxito o error -->
-                                </div>
+                                <!-- </div> -->
                             </form>
                         </div>
                     </div>
@@ -649,31 +651,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="animation.js"></script>
-    
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     <script>
-        document.getElementById("contactForm").addEventListener("submit", function(e){
-            e.preventDefault();
+        // document.getElementById("contactForm").addEventListener("submit", function(e){
+        //     e.preventDefault();
 
-            const form = e.target;
-            const formData = new FormData(form);
+        //     const form = e.target;
+        //     const formData = new FormData(form);
 
-            fetch("mail.php", {
-                method: "POST",
-                body: formData
-            })
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("form-message").innerHTML = data;
-                form.reset(); // opcional: limpiar formulario
-                 grecaptcha.reset(); // resetea el captcha
-            })
-            .catch(error => {
-                document.getElementById("form-message").innerHTML = '<div class="alert alert-danger alert-dismissible fade show" role="alert">'+
-                '<p style="text-align: center;"><strong>Error al enviar el mensaje.</strong><br>Intenta más tarde.</p>'+
-                '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>'+
-                '</div>';
-            });
-        });
+        //     fetch("mail.php", {
+        //         method: "POST",
+        //         body: formData
+        //     })
+        //     .then(response => response.text())
+        //     .then(data => {
+        //         document.getElementById("form-message").innerHTML = data;
+        //         form.reset(); // opcional: limpiar formulario
+        //          grecaptcha.reset(); // resetea el captcha
+        //     })
+        //     .catch(error => {
+        //         document.getElementById("form-message").innerHTML = '<div class="alert alert-danger alert-dismissible fade show" role="alert">'+
+        //         '<p style="text-align: center;"><strong>Error al enviar el mensaje.</strong><br>Intenta más tarde.</p>'+
+        //         '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>'+
+        //         '</div>';
+        //     });
+        // });
     </script>
 </body>
 </html>
