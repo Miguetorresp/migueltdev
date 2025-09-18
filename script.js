@@ -1067,7 +1067,7 @@ document.querySelectorAll('.expertise-card').forEach(card => {
 });
 
 
-// Función para manejar el envío del formulario con reCAPTCHA
-function onSubmit(token) {
-    document.getElementById("contact-form").submit();
-}
+// // Función para manejar el envío del formulario con reCAPTCHA
+// function onSubmit(token) {
+//     document.getElementById("contact-form").submit();
+// }
